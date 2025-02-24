@@ -36,13 +36,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
-    # Applies to all files under models/example/
-    medicare_data_warehouse:
-      +schema: medicare_warehouse_target
-      staging:
-        +materialized: table
-      dimensions:
-        +materialized: table
-      facts:
-        +materialized: table
+  medicare_elt_project:
+    +dataset: medicare_warehouse_target  # Ensures all models go into this dataset
+    +project: medicare-partd-project1    # Specifies the BigQuery project
+    staging:
+      +materialized: table
+    dimensions:
+      +materialized: table
+    facts:
+      +materialized: table
