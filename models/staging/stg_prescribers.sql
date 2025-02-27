@@ -1,5 +1,6 @@
 SELECT Prscrbr_NPI AS prscrbr_npi, 
-    Prscrbr_Last_Org_Name AS prscrbr_last_org_name, 
+    Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
+    Prscrbr_First_Name AS prescrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -17,7 +18,8 @@ FROM partdsource.prescribers2018
 UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
-    Prscrbr_Last_Org_Name AS prscrbr_last_org_name, 
+    Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
+    Prscrbr_First_Name AS prescrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -35,7 +37,8 @@ FROM partdsource.prescribers2019
 UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
-    Prscrbr_Last_Org_Name AS prscrbr_last_org_name, 
+    Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
+    Prscrbr_First_Name AS prescrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -53,7 +56,8 @@ FROM partdsource.prescribers2020
 UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
-    Prscrbr_Last_Org_Name AS prscrbr_last_org_name, 
+    Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
+    Prscrbr_First_Name AS prescrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -71,7 +75,8 @@ FROM partdsource.prescribers2021
 UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
-    Prscrbr_Last_Org_Name AS prscrbr_last_org_name, 
+    Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
+    Prscrbr_First_Name AS prescrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 

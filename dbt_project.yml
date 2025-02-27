@@ -37,8 +37,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   medicare_elt_project:
-    +dataset: medicare_warehouse_target  # Ensures all models go into this dataset
-    +project: medicare-partd-project1    # Specifies the BigQuery project
     staging:
       +materialized: table
     dimensions:

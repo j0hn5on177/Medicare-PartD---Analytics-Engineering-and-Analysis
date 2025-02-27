@@ -1,5 +1,27 @@
-SELECT GENERATE_UUID() AS drug_id,
-    brnd_name AS brand_name,
-    gnrc_name AS generic_name,
-    mftr_name AS manufacturer_name
-FROM medicare_warehouse_target.prescriptiondrugs
+WITH drugs AS (
+    SELECT
+        brnd_name,
+        gnrc_name,
+        mftr_name
+    FROM {{ ref('stg_prescriptiondrugs') }}
+
+    UNION DISTINCT
+
+    SELECT
+        brnd_name,
+        gnrc_name,
+        NULL AS mftr_name
+    FROM {{ ref('stg_prescribers') }}
+)
+
+SELECT 
+    TO_HEX(SHA256(CONCAT(
+        COALESCE(prescrbr_npi, ''), '|', 
+        COALESCE(prscrbr_last_org_name, ''),
+        COALESCE(prescrbr_city))))
+     AS desc_id,  -- Stable, deterministic key
+    prscrbr_npi AS npi,
+    prscrbr_last_org_name AS last_org_name,
+    prscrbr_na AS manufacturer_name
+FROM drugs
+
