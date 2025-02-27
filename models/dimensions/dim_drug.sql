@@ -14,14 +14,15 @@ WITH drugs AS (
     FROM {{ ref('stg_prescribers') }}
 )
 
+
 SELECT 
     TO_HEX(SHA256(CONCAT(
-        COALESCE(prescrbr_npi, ''), '|', 
-        COALESCE(prscrbr_last_org_name, ''),
-        COALESCE(prescrbr_city))))
-     AS desc_id,  -- Stable, deterministic key
-    prscrbr_npi AS npi,
-    prscrbr_last_org_name AS last_org_name,
-    prscrbr_na AS manufacturer_name
+        COALESCE(brnd_name, ''), '|', 
+        COALESCE(gnrc_name, '')
+        )))
+     AS drug_id,  -- Stable, deterministic key
+    brnd_name,
+    gnrc_name,
+    mftr_name
 FROM drugs
 
