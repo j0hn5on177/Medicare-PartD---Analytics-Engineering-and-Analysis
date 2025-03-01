@@ -9,6 +9,6 @@ SELECT
     Avg_Spnd_Per_Dsg_Unt_Wghtd AS avg_spnd_per_dsg_unt_wghtd, 
     Tot_Benes AS tot_benes, 
     Tot_Clms AS tot_clms, 
-    Tot_Dsg_Unts AS tot_dsg_unts, 
+    Tot_Dsg_Unts AS tot_dsg_unts,
     Tot_Spndng AS tot_spndng
 FROM partdsource.spending_bydrug_18_22
