@@ -1,6 +1,6 @@
 SELECT Prscrbr_NPI AS prscrbr_npi, 
     Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
-    Prscrbr_First_Name AS prescrbr_first_name,
+    Prscrbr_First_Name AS prscrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -19,7 +19,7 @@ UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
     Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
-    Prscrbr_First_Name AS prescrbr_first_name,
+    Prscrbr_First_Name AS prscrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -38,7 +38,7 @@ UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
     Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
-    Prscrbr_First_Name AS prescrbr_first_name,
+    Prscrbr_First_Name AS prscrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -57,7 +57,7 @@ UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
     Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
-    Prscrbr_First_Name AS prescrbr_first_name,
+    Prscrbr_First_Name AS prscrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
@@ -76,7 +76,7 @@ UNION ALL
 
 SELECT Prscrbr_NPI AS prscrbr_npi, 
     Prscrbr_Last_Org_Name AS prscrbr_last_org_name,
-    Prscrbr_First_Name AS prescrbr_first_name,
+    Prscrbr_First_Name AS prscrbr_first_name,
     Prscrbr_City AS prscrbr_city, 
     Prscrbr_State_Abrvtn AS prscrbr_state_abrvtn, 
     Prscrbr_Type AS prscrbr_type, 
