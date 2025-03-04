@@ -9,6 +9,6 @@ SELECT TO_HEX(SHA256(CONCAT(
         prscrbr_city AS city,
         prscrbr_state_abrvtn AS state
 
-FROM {{ ref('stg_prescribers') }}
+FROM {{ ref('stg_prescription') }}
 
 
