@@ -19,6 +19,8 @@ SELECT
     COALESCE(year_id, ''), '|',
     COALESCE(CAST(avg_spnd_per_bene AS STRING), '')
 ))) AS fact_spending_id,
+    drug_id,
+    year_id,
     avg_spnd_per_bene,
     avg_spnd_per_clm,
     avg_spnd_per_dsg_unt_wghtd,
