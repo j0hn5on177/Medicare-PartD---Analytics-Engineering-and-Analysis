@@ -11,7 +11,7 @@ WITH drugs AS (
         brnd_name,
         gnrc_name,
         NULL AS mftr_name
-    FROM {{ ref('stg_prescribers') }}
+    FROM {{ ref('stg_prescriptions') }}
 )
 
 

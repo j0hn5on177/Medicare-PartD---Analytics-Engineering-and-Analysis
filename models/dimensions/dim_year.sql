@@ -4,5 +4,5 @@ SELECT
 FROM (
     SELECT year FROM {{ ref('stg_prescriptiondrugs') }}
     UNION DISTINCT 
-    SELECT year FROM {{ ref('stg_prescribers') }}
+    SELECT year FROM {{ ref('stg_prescriptions') }}
 )
