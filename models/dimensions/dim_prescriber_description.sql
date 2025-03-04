@@ -3,6 +3,7 @@ SELECT TO_HEX(SHA256(CONCAT(
         COALESCE(prscrbr_last_org_name, ''), '|',
         COALESCE(prscrbr_first_name, '')
     ))) AS desc_id,
+        Prscrbr_NPI AS npi,
         prscrbr_last_org_name AS last_name,
         prscrbr_first_name AS first_name,
         prscrbr_city AS city,
