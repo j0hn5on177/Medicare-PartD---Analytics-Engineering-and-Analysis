@@ -40,9 +40,7 @@ models:
 
     staging:
       +materialized: table
-      
     dimensions:
       +materialized: table
-
     facts:
       +materialized: table

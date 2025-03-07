@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_prescription  # fact p
+    description: "fact table for prescriptions"
+    tests:
+      - unique:
+          column_name: "fact_prescription_id"  # prescription
+
+  - name: fact_drug_spending #fact drug spending
+    description: "fact table for drug spending"
+    tests:
+      - unique:
+          column_name: "fact_spending_id"  # spending
