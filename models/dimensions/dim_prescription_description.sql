@@ -2,7 +2,9 @@ SELECT DISTINCT
     TO_HEX(SHA256(CONCAT(
         COALESCE(CAST(Prscrbr_NPI AS STRING), ''), '|', 
         COALESCE(prscrbr_last_org_name, ''), '|',
-        COALESCE(prscrbr_first_name, '')
+        COALESCE(prscrbr_first_name, ''), '|',
+        COALESCE(prscrbr_city, ''), '|',
+        COALESCE(prscrbr_state_abrvtn, '')
     ))) AS desc_id,
     Prscrbr_NPI AS npi,
     prscrbr_last_org_name AS last_name,

@@ -1,6 +1,6 @@
 SELECT 
-    Brnd_Name AS brnd_name, 
-    Gnrc_Name AS gnrc_name, 
+    REPLACE(Brnd_Name, '*', '') AS brnd_name,  -- Remove * from brnd_name
+    REPLACE(Gnrc_Name, '*', '') AS gnrc_name,  -- Remove * from gnrc_name
     Tot_Mftr AS tot_mftr, 
     Mftr_Name AS mftr_name, 
     Year AS year, 
