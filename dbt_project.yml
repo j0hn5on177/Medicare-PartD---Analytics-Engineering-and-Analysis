@@ -37,10 +37,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   medicare_elt_project:
+    datamart_drugspending:
+      +materialized: table
+    
+    datamart_prescription:
+      +materialized: table
 
-    staging:
-      +materialized: table
-    dimensions:
-      +materialized: table
-    facts:
-      +materialized: table
+    

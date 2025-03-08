@@ -17,4 +17,4 @@ models:
     description: "Dimension table for year"
     tests:
       - unique:
-          column_name: "year_id"  # year
+          column_name: "year"  # year
