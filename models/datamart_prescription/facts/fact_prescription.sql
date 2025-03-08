@@ -17,7 +17,7 @@ WITH fact_data AS (
         tot_drug_cst AS total_cost,
         tot_30day_fills,
         tot_day_suply AS total_day_supply
-    FROM {{ ref('stg_prescription') }}
+    FROM {{ ref('stg_prescriber_drugcost') }}
 )
 
 SELECT

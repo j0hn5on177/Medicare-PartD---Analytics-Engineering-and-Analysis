@@ -11,4 +11,4 @@ SELECT DISTINCT
     prscrbr_first_name AS first_name,
     prscrbr_city AS city,
     prscrbr_state_abrvtn AS state
-FROM {{ ref('stg_prescription') }}
+FROM {{ ref('stg_prescriber_drugcost') }}

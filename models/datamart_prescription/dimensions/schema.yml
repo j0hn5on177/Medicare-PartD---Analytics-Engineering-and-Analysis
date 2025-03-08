@@ -11,7 +11,7 @@ models:
     description: "Dimension table for drug"
     tests:
       - unique:
-          column_name: "drug_pk"  # drug
+          column_name: "drug_id"  # drug
 
   - name: dim_year #dim year
     description: "Dimension table for year"
