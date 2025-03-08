@@ -20,7 +20,7 @@ WITH fact_data AS (
     FROM {{ ref('stg_prescriber_drugcost') }}
 )
 
-SELECT
+SELECT DISTINCT
     TO_HEX(SHA256(CONCAT(
         COALESCE(desc_id, ''), '|',
         COALESCE(drug_id, ''), '|',

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_drug_spend  # dim ds
+    description: "Dimension table for drugs"
+    tests:
+      - unique:
+          column_name: "drug_id"  # Adjust columns accordingly
+
+  - name: dim_year_spend #dim year
+    description: "Dimension table for year"
+    tests:
+      - unique:
+          column_name: "year_id"  # year
