@@ -1,5 +1,5 @@
 WITH prescriber_data AS (
-    SELECT
+    SELECT DISTINCT
         TO_HEX(SHA256(CONCAT(
             COALESCE(CAST(Prscrbr_NPI AS STRING), ''), '|', 
             COALESCE(prscrbr_last_org_name, ''), '|',
