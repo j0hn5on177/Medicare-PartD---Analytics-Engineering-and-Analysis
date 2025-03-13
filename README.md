@@ -69,7 +69,7 @@ Highlights
 
 ## Insights and Trends Deep-Dive (insights conducted with queries and visuals in dbt/BigQuery/Tableau)
 
-# 1. Financial Trends
+1. Financial Trends
 - Total Cost of 5 Most Expensive Drugs
   - Total cost of Eliquis (blood thinner) has grown exponentially (188% over 5 years), costing Medicare from just 4B$ in 2018 to 14.4B$ in 2022
   - The 5 most expensive drugs 1)Eliquis 2)Trulicity 3)Revlimid 4)Xarelto 5)Januvia are all projected to increase, but not as drastically as Eliquis
@@ -86,7 +86,7 @@ Highlights
 <img src="visualizations/costspendrates.png" width="600">
 
 
-# 2. Claims Volume
+2. Claims Volume
 - Total Claims (number of times a drug was submitted for request of payment – is a fulfilled prescription) 
   - Based on 5 years of medicare drug data, Atorvastatin Calcium (287M - cholesterol) is the highest prescribed and claimed drug by beneficiaries, followed by Amlodipine (hypertension), Levothyroxine (thyroid), Lisinopril (heart blood pressure)
   - Shows the high reliance of Medicare beneficiaries on cholesterol, blood pressure, thyroid and heart medications
@@ -98,7 +98,7 @@ Highlights
 <img src="visualizations/avgclaimsspecialty.png" width="700">
 
 
-# 3. Market Contribution by Drug
+3. Market Contribution by Drug
 - Spending Percentage of top Drugs 
   - Despite the large amount of spending per year on top 10 brand drugs, they only account for less than 1-2% of total spending with Eliquis at 1.5%
 <img src="visualizations/spendingpercentage.png" width="700">
@@ -108,7 +108,7 @@ Highlights
 <img src="visualizations/costpercentage.png" width="700">
 
 
-# 4. Geographics
+4. Geographics
 - Average Annual Cost per Claim of Top 10 States
   - Highest cost states for prescription claims are in the Northeast and Hawaii
   - Although not a state, as of recent data shows DC as the location with highest cost for prescription claims at $212
