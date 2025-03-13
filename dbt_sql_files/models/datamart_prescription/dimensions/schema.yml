@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_prescription_description  # dim pd
+    description: "Dimension table for prescription description"
+    tests:
+      - unique:
+          column_name: "desc_pk"  # Adjust columns accordingly
+
+  - name: dim_drug #dim drug
+    description: "Dimension table for drug"
+    tests:
+      - unique:
+          column_name: "drug_id"  # drug
+
+  - name: dim_year #dim year
+    description: "Dimension table for year"
+    tests:
+      - unique:
+          column_name: "year_id"  # year

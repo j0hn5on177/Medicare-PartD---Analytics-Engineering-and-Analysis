@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: fact_prescription  # fact p
+    description: "fact table for prescriptions"
+    tests:
+      - unique:
+          column_name: "fact_prescription_id"  # prescription
