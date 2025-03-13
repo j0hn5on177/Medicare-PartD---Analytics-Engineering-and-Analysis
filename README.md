@@ -18,13 +18,13 @@ The dataset consists of Medicare Part D data on Prescription Services and Prescr
 What do the trends look like for the most expensive drug prescriptions? How does state data differ? What can the government do to continue to enable affordable care for US citizens? This project aims to create queryable data models for the purpose of answering these questions based on prescriber, drug, claims, spending, and volume data.
 
 ## Business/Design Requirements and Cleaning Process
-# 1. Functional
+1. Functional
 - Pulls data from a single source rather than multiple sources in the system
 - Utilizes a bucket storage for annual load so it’s not something that needs to be updated, given its annual nature
 - Stores any data type, but structured for CSVs
 - Allows for efficient queries through universal data language SQL 
 
-# 2. Non-functional
+2. Non-functional
 - Requires reliable government data
 - What platform and storage? 
   - Bigquery and Google cloud storage
@@ -32,7 +32,7 @@ What do the trends look like for the most expensive drug prescriptions? How does
   - Dabbled with Looker Studio since this was a small project, but found it unintuitive
   - Ended with Tableau for more appealing visuals and familiarity
 
-# 3. Data Cleaning Process
+3. Data Cleaning Process
 - Cleaned and data profiled with pandas in python
 - Wide format reshaped/cleaned into tall format
 - Conformed data types if there were mismatch values
@@ -77,7 +77,7 @@ Highlights
 - Total Spending – The total amount spent on a drug (includes patient, insurer, and Medicare contributions)
   - While not unexpected, the 5 drugs Medicare spends the most on are the same as above with Eliquis spending at 30B$ in 2022 from only 10B$ in 2018
   - Similar to cost trends, spending is expected to increase exponentially for Eliquis, and slightly for the other 4
-<img src="visualizations/costspendtrend.png" width="600">
+<img src="visualizations/costspendtrend.png" width="700">
 
 
 - Rate of Change in Cost and Spending (%)
@@ -90,22 +90,22 @@ Highlights
 - Total Claims (number of times a drug was submitted for request of payment – is a fulfilled prescription) 
   - Based on 5 years of medicare drug data, Atorvastatin Calcium (287M - cholesterol) is the highest prescribed and claimed drug by beneficiaries, followed by Amlodipine (hypertension), Levothyroxine (thyroid), Lisinopril (heart blood pressure)
   - Shows the high reliance of Medicare beneficiaries on cholesterol, blood pressure, thyroid and heart medications
-<img src="visualizations/totalclaims.png" width="600">
+<img src="visualizations/totalclaims.png" width="700">
 
 
 - Annual Average of Claims by Specialty 
   - Family Practice and Internal Medicine are the top 2 specialties with the highest average claims annually (349M and 339M)
-<img src="visualizations/avgclaimsspecialty.png" width="600">
+<img src="visualizations/avgclaimsspecialty.png" width="700">
 
 
 # 3. Market Contribution by Drug
 - Spending Percentage of top Drugs 
   - Despite the large amount of spending per year on top 10 brand drugs, they only account for less than 1-2% of total spending with Eliquis at 1.5%
-<img src="visualizations/spendingpercentage.png" width="600">
+<img src="visualizations/spendingpercentage.png" width="700">
 
 - Cost Percentage of top Drugs 
   - Eliquis makes up approx 6% of total Medicare Part D Cost in 2022 followed by Revlimid (3.2%) and Xarelto (2.6%)
-<img src="visualizations/costpercentage.png" width="600">
+<img src="visualizations/costpercentage.png" width="700">
 
 
 # 4. Geographics
@@ -114,12 +114,12 @@ Highlights
   - Although not a state, as of recent data shows DC as the location with highest cost for prescription claims at $212
 CT, HI, and NY state have the next highest average cost per claims 
   - All states are expected to have an upward trend in costs, not just the top 10 most expensive drugs
-<img src="visualizations/avgstateperclaim.png" width="600">
+<img src="visualizations/avgstateperclaim.png" width="700">
 
 - Number of Beneficiaries by State 2022
   - California has the most beneficiaries at 33M followed by Florida and Texas
   - It seems a large portion of beneficiaries comes from the east and large states such as California and Texas
-<img src="visualizations/beneficiariesstate2022.png" width="600">
+<img src="visualizations/beneficiariesstate2022.png" width="700">
 
 
 ## Recommendations and Conclusions
