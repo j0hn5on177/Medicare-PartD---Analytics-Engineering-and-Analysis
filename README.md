@@ -41,8 +41,8 @@ What do the trends look like for the most expensive drug prescriptions? How does
 - Constant dbt generic testing as well as query ad-hoc testing was conducted to ensure primary key uniqueness and relational integrity for all facts and dimension tables
 
 ## Data Model (Star Schema) 
-Transformation done in dbt and end tables are stored in BigQuery
-Relational integrity maintained through primary and foreign keys - which allows for accurate querying even though BigQuery doesn’t natively support relational integrity
+Transformation done in dbt and end tables are stored in BigQuery.
+Relational integrity maintained through primary and foreign keys - which allows for accurate querying even though BigQuery doesn’t natively support relational integrity.
 Initially designed an Integrated Data Warehouse based on kimball methodology, but scrapped it as the source data aggregations made it difficult to combine fluidly.
 After testing out the initial warehouse model, ended up with 2 separate data marts for analysis
 <img src="visualizations/datamodel.png" width="700">
